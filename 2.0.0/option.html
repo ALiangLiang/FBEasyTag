@@ -1,0 +1,48 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Option</title>
+<link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="option.css" rel="stylesheet" type="text/css">
+<script src='jquery/jquery-2.1.0.min.js'></script>
+<script src='Bootstrap/js/bootstrap.min.js'></script>
+<script src='option.js'></script>
+</head>
+
+<body id="body">
+<div style="width:200px">
+	<div style="margin:10 10 0 10;">
+		<button class="btn btn-large btn-primary btn-block" id="Btn-Save" style="margin:5px 0 15px 0" type="button">Save into group</button>
+		<button class="btn btn-large btn-primary btn-block" id="Btn-Write" style="margin:5px 0 15px 0" type="button">Write on tag</button>
+	</div>
+	<div class="alert alert-danger fade in" id="alert" style="display:none;" role="alert">
+		<button type="button" id="close" class="close">
+			<span>×</span>
+			<span class="sr-only">Close</span>
+		</button>
+		<p>
+			Sure?
+			<button type="button" id="continue" class="btn btn-sm btn-danger" style="margin-left:20px;">
+				Yes
+			</button>
+		</p>
+    </div>
+	<div class="btn-group btn-group-vertical AT-panel" id="groupG" data-toggle="buttons" style="float:left;display:none;margin:10 0 10 10;">
+		<button type="button" class="btn btn-primary" disabled>Group</button>
+		<button type="button" id="Btn-Input" class="btn btn-default"><input type="text" id="In-Name" style="width:55px;" /></button>
+	</div>
+	<div class="btn-group btn-group-vertical AT-panel" id="nameG" style="float:left;display:none;margin:10 10 10 10" data-toggle="buttons-checkbox">
+		<button type="button" id="AT-Fname" class="btn btn-primary" disabled>Name</button>
+	</div>
+	<div class="btn-group" style="margin:0 13px 0 13px;">
+		<button type="button" class="btn btn-sm btn-default" id="Remove_group">Group</button>
+		<button type="button" class="btn btn-sm btn-danger" disabled>Delete</button>
+		<button type="button" class="btn btn-sm btn-default" id="Remove_name">Name</button>
+	</div>
+	<div style="margin:7px 0 0 10px;clear:left;color:gray;font-size:8px">
+		<p>author ALiangLiang.
+		<p id="ver">
+	</div>
+</div>
+</body>
+</html>

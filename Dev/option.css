@@ -1,0 +1,5 @@
+/* Webkit (Safari/Chrome 10) */ 
+body{background-image: -webkit-radial-gradient(center, ellipse farthest-corner, #C0E0F0 0%, #A1C6FF 100%);}
+
+/* Webkit (Chrome 11+) */ 
+body{background-image: radial-gradient(ellipse farthest-corner at center, #C0E0F0 0%, #A1C6FF 100%);}

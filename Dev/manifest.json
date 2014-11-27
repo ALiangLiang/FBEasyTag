@@ -1,0 +1,29 @@
+{
+   "background": {
+      "scripts": [ "jquery.js", "background.js"]
+   },
+   "content_scripts": [ {
+      "js": [ "jquery.js", "content.js" ],
+      "matches": [ "*://www.facebook.com/*" ]
+   } ],
+   "permissions": [
+        "contextMenus",
+		"tabs"
+    ],
+   "description": "FB™ Easy Tag: It's easy to tag multiple people.",
+   "manifest_version": 2,
+   "page_action": {
+    "default_icon": "icon/icon19.png",
+    "default_title": "Tag",
+	"default_popup": "option.html" 
+   },
+   "icons": {
+      "128": "icon/icon128.png",
+      "16": "icon/icon16.png",
+      "48": "icon/icon48.png"
+   },
+   "name": "FB™ Easy Tag",
+   "minimum_chrome_version": "12",
+   "content_security_policy": "script-src 'self' https://www.google.com https://checkout.google.com; object-src 'self'",
+   "version": "2.0.0"
+}

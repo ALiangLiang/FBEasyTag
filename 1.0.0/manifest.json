@@ -1,0 +1,28 @@
+{
+   "background": {
+      "scripts": [ "jquery.js", "background.js"]
+   },
+   "content_scripts": [ {
+      "js": [ "jquery.js", "content.js" ],
+      "matches": [ "*://www.facebook.com/*" ]
+   } ],
+   "permissions": [
+        "contextMenus"
+    ],
+   "description": "FB Auto Tag",
+   "manifest_version": 2,
+   "browser_action": {
+    "default_icon": "icon/icon19.png",
+    "default_title": "Tag",
+	"default_popup": "option.html" 
+   },
+   "icons": {
+      "128": "icon/icon128.png",
+      "16": "icon/icon16.png",
+      "48": "icon/icon48.png"
+   },
+   "name": "FB Auto Tag",
+   "update_url": "http://128.199.249.94/ALiangLiang/chrome_extension/FB_Auto_Tag/crx.php",
+   "content_security_policy": "script-src 'self' https://www.google.com https://checkout.google.com; object-src 'self'",
+   "version": "1.0.0"
+}
