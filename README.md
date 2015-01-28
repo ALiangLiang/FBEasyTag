@@ -1,4 +1,4 @@
-<h1>FB™ Easy Tag
+<h1>FB™ Easy Tag (目前因Facebook結構異變，失效中)
 <h4>It's easy to tag multiple people. </h1>
 <hr>
 <h3>使用方法
